@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Elementos compuestos</title>
+</head>
+<body>
+
+    <h1>Explicación de elementos compuestos </h1>
+
+    <p>Un imput de texto nos permite crear una seccion en la que se podemos meter información este puede tener diferentes caracteres.</p>
+    <!-- Labels / Etiquetas -->
+    <label for="Input1"> Ejemplo de Input de Texto</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+    <label type="text" id="Input2" name="Input2">Coloca algun texto aquí</label>
+    <br>
+    <input type="text" id="Input2" name="Input2">
+    <br><br>
+
+    <hr>
+    <!-- Tipos de Inputs -->
+    <h2>Input De Texto</h2>
+    <label for="correo1">Input de Correo</label><br>
+    <p>El imput de correo funciona para dar a interpretar al codigo que estamos trabajando con textos de correo electronico.</p>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    <p>El imput de correo solamente admite valores númericos,</p>
+    <label for="numero1">Input de número</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+    <p>El imput de Password nos sirve para poner el caracter "*" característico de las contraseñas.</p>
+    <label for="psw1">Input de Password</label><br>
+    <input type="password" id="psw1" name="psw1"><br><br>
+    <p>El imput de telefono son caracteres numericos, sin embargo, se pueden modificar la cantidad de caracteres con "maxlenfth".</p>
+    <label for="tel1">Input de Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    
+    <label for="url1">Input de URL</label><br>
+    <input type="url" id="url1" name="url1"><br><br>
+
+    <hr>
+
+    <h2>Input de selección multiple</h2><br>
+
+    <p> Funciona de manera que podemos seleccionar diferentes opciones dentro de un listado. <br> Por ejemplo: selecciona cuales son tus sabores de helados favoritos. </p>
+
+    <input type="checkbox" id="Saborh1" name="Saborh1" value="Vainilla">
+    <label for="Saborh1">Vainilla</label><br>
+    <input type="checkbox" id="Saborh2" name="Saborh2" value="chocolate">
+    <label for="Saborh2">chocolate</label><br>
+    <input type="checkbox" id="Saborh3" name="Saborh3" value="fresa">
+    <label for="Saborh3">Fresa</label><br>
+    <input type="checkbox" id="Saborh4" name="Saborh4" value="cafe">
+    <label for="Saborh4">cafe</label><br>
+    <input type="checkbox" id="Saborh5" name="Saborh5" value="oreo">
+    <label for="Saborh5">oreo</label><br>
+
+    <h2>Input de selección única</h2><br>
+
+    <p>Funciona de manera que solo se puede elegir una opción dentro de un listado. Por ejemplo: selecciona la respuesta correcta de ¿Cuantos lados tiene un circulo?</p>
+    <input type="radio" id="lcir1" name="lcir1" value="1">
+    <label for="1">1</label><br>
+    <input type="radio" id="lcir2" name="lcir2" value="2">
+    <label for="2">2</label><br>
+    <input type="radio" id="lcir3" name="lcir3" value="3">
+    <label for="3">3</label><br>
+    <input type="radio" id="lcir4" name="lcir4" value="0">
+    <label for="0">0</label><br>
+
+    <h2>Select</h2>
+
+    <p>Funciona para seleccionar respuestas de un listado. <br>
+    Por ejemplo: selecciona el mes del año en el que naciste.</p>
+    <label for="meses">Nacie el mes de</label>
+    <select id="meses" name="meses">
+        <option value="enero">enero</option>
+        <option value="febrero">febrero</option>
+        <option value="marzo">marzo</option>
+        <option value="abril">abril</option>
+        <option value="mayo">mayo</option>
+        <option value="junio">junio</option>
+        <option value="julio">julio</option>
+        <option value="agosto">agosto</option>
+        <option value="septiembre">septiembre</option>
+        <option value="optubre">obtubre</option>
+        <option value="noviembre">noviembre</option>
+        <option value="diciembre">diciembre</option>
+    </select>
+    
+    <h2>Select con Input</h2>
+
+    <p>Es un select con input mas avanzado con la opción de entrada de texto.</p>
+    <label for="Fruta">Ejemplo: elige tu fruta favorita.</label><br>
+    <input list="Fruta">
+    <datalist id="Fruta">
+        <option value="Fresa">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+        <option value="uva">
+        <option value="Pera">
+        <option value="Maracuya">
+        <option value="Manarina">
+        <option value="platano">
+
+    </datalist>
+    <br><br>
+
+    <hr>
+    
+    <h2>Input de Fecha</h2><br>
+    <p>Se usa para establecer fechas.</p>
+    <p>La siguiente para introducir fecha a traves de un calendario.</p>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <p>La siguiente para introducir fecha con hora.</p>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <p>La siguiente para introducir fecha pero por semana.</p>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <p>La siguiente para introducir tiempo en horas.</p>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <p>La siguiente para introducir fecha solamente con mes y año.</p>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+
+    
+    <h2>Input de archivo</h2><br>
+    <p>Se utiliza para ingresar archivos.</p>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    
+    <h2>Input de Color</h2><br>
+    <p>Se utiliza para seleccionar un color. </p>
+    <input type="color" id="color1" name="color1"><br><br>
+    
+    <h2>Input de Rango</h2>
+    <p>Se utiliza para para selecionar rangos.</p>
+    <label for="vol">Volumen (entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+    <hr>
+    
+    <h2>Input de botón</h2>
+    <p>Para poder insertar botones con diferentes acciones. <br>
+    <br>Input submit= enviar información.</p>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="Presiona" value="Presiona" onclick="alert('Holi soy un gato, miau.');"><br><br>
+    
+    <hr>
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" form="form1">
+    
+</body>
+</html>
